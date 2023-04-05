@@ -56,13 +56,6 @@
 	height="450"
 ></iframe>
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"
-></script>
-
-<gradio-app src="https://ertugruldemir-irisflowerspeciesclassification.hf.space"></gradio-app>
-
 
 #### __Data__
 - The [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) is included in the seaborn library and can be loaded directly into a Pandas DataFrame. 
