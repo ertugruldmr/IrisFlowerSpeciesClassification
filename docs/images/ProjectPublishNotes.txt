@@ -1,0 +1,120 @@
+# Github Ğrpkect Upload Template
+
+
+
+# File Structure
+-> data 
+-> env
+-> src
+-> app.py
+-> docs
+-> study.ipynb
+
+
+# readme file
+
+-> Basic description
+-> Table of content
+-> Introduction
+	-> Description (Abstract), 
+	-> Live Demo
+	-> Explanation project structure
+-> Project Dependencies
+	-> Data
+	-> Environment
+-> Project 
+	-> Problem Defination
+	-> Studies
+	-> Final Training
+	-> Results
+-> Deployment
+	-> App 
+	-> Usage
+-> Related Links
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+# example ml file structure
+
+project_name/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   ├── external/
+│   └── README.md
+├── models/
+│   ├── model_name_1/
+│   ├── model_name_2/
+│   ├── ...
+│   └── README.md
+├── notebooks/
+│   ├── exploratory_data_analysis.ipynb
+│   ├── data_preparation.ipynb
+│   ├── model_training.ipynb
+│   ├── model_evaluation.ipynb
+│   ├── model_inference.ipynb
+│   └── README.md
+├── scripts/
+│   ├── data_preparation.py
+│   ├── model_training.py
+│   ├── model_evaluation.py
+│   ├── model_inference.py
+│   └── README.md
+├── webapp/
+│   ├── templates/
+│   ├── static/
+│   ├── app.py
+│   └── README.md
+├── README.md
+└── requirements.txt
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# example readme.md tenokate
+# Project Name
+
+## Overview
+
+- Description: A brief description of the project and its goals.
+- Goals: The objectives of the project.
+- Data Sources: The source of the data used in the project.
+- Models Used: The machine learning models used in the project.
+- Results: The results and conclusions drawn from the project.
+
+## File Structure
+
+- A brief description of the file structure used in the project.
+
+## Notebooks
+
+- A list of Jupyter notebooks used in the project, along with a brief description of each.
+
+## Installation
+
+- Instructions on how to install the necessary libraries and dependencies to run the project.
+
+## Usage
+
+- Instructions on how to run the Jupyter notebooks and scripts included in the project.
+
+## Acknowledgements
+
+- A list of acknowledgements for any libraries, datasets, or tutorials used in the project.
+- A list of personal notes or reflections on the project and the skills developed through working on it.
+
+## License
+
+- The project's license, if applicable
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Notes from project Reviewes
+# Krish Naik's revies of resume [https://www.youtube.com/playlist?list=PLZoTAELRMXVMqIy62erko74zc9q6671rU]
+-> Project chapters (goal, solution, result)
+	-> topic titles (Task, One Sentence Description, aim with metrics(increase %5 of revenue with proof of concept (POC)),Results)
+	-> add github links
+	-> project (Description, goals, results, end to end project explanationm, training details (Fine Tune etc), deployment details)
+	-> Skillset
+	-> Open Source Contribution, Blog writing
+	-> add personal project links like -> [Demo App][Git][Kaggle][HF][Blog]
