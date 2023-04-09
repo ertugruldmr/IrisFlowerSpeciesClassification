@@ -12,6 +12,26 @@
 
 # Iris Flowers Species Classification
 
+## __Table Of Content__
+- (A) [__Brief__](#brief)
+  - [__Project__](#project)
+  - [__Data__](#data)
+  - [__Demo__](#demo) -> [Live Demo](https://ertugruldemir-irisflowerspeciesclassification.hf.space)
+  - [__Study__](#problemgoal-and-solving-approach)
+  - [__Results__](#results)
+- (B) [__Detailed__](#Details)
+  - [__Abstract__](#abstract)
+  - [__Explanation of the study__](#explanation-of-the-study)
+    - [__(A) Dependencies__](#a-dependencies)
+    - [__(B) Dataset__](#b-dataset)
+    - [__(C) Pre-processing__](#c-pre-processing)
+    - [__(D) Exploratory Data Analysis__](#d-exploratory-data-analysis)
+    - [__(E) Modelling__](#e-modelling)
+    - [__(F) Saving the project__](#f-saving-the-project)
+    - [__(G) Deployment as web demo app__](#g-deployment-as-web-demo-app)
+  - [__Licance__](#license)
+  - [__Connection Links__](#connection-links)
+
 ## __Brief__ 
 
 ### __Project__ 
@@ -169,12 +189,11 @@ The project aimed classifying the species using the features. The study includes
 
 
 
-## Details (don't forget using the metrics but DETAILED)
-### Table Of content
-### Introduction
-#### Abstract
+## Details 
+
+### Abstract
 - Iris Flowers Dataset is used to classifying the species of the flowers. The dataset has 50 records per class as 150 records with 3 target class. The problem is supervised learning task as multiple class classification. The goal is the predicting the species of the flowers correctly through using supervised machine learning algorithms such as non-linear, ensemble and smilar classic machine learning model.The study includes creating the environment, getting the data, preprocessing the data, exploring the data, modelling the data, saving the results, deployment as demo app. Training phase of the models implemented through cross validation and Grid Search model tuning approachs. Hyperparameter tuning implemented Greedy Greed Search approach which tunes a hyper param at once a time while iterating the sorted order according the importance of the hyperparams. Models are evaluated with corss validation methods using 5 split. Classification results collected and compared between the models. Selected the basic and more accurated model which is the logistic regression. Tuned Logistic regression model has %97 accuracy, precision, recall, f1_score, the other metrics are also found the results section such as feature importance. End of the study created a demo and served on huggingface space.  
-#### File Structures
+### File Structures
 
 - File Structure Tree
 ```bash
@@ -208,12 +227,12 @@ The project aimed classifying the species using the features. The study includes
     - It is all the studies about solving the problem which reason of the dataset existance.    
 
 
-#### Explanation of the Study
-- __(A) Dependencies__:
+### Explanation of the Study
+#### __(A) Dependencies__:
   -  There in no additional or third-parth installation. The libraries which already installed on the environment are enough. You can create an environment via env/requirements.txt. Create a virtual environment then use following code. It is enough to satisfy the requirements for runing the study.ipynb which training pipeline.
-- __(B) Dataset__: 
+#### __(B) Dataset__: 
   - Downloading the iris dataset via seaborn library as pandas DataFrame object. The dataset has 150 records. Each target class has 50 records. There are 4 features there are sepal_length, sepal_width, petal_length, petal_width. All the features are numerical as float typed.The target variables is species and it has 3 classes, these are setosa, versicolor, virginica. for more info such as histograms and etc... you can look the '(D) Exploratory Data Analysis' chapter.
-- __(C) Pre-processing__: 
+#### __(C) Pre-processing__: 
   - The processes are below:
     - Preparing the dtypes such as casting the object type to categorical type.
     - Outlier analysis using the both visual and OQR calculation apporachs. According to IQR approach there was no outlier data so no handling approach implemented.
@@ -221,7 +240,7 @@ The project aimed classifying the species using the features. The study includes
           <img src="docs/images/outlier_analysis.png" style="width: 400px; height: 150px;">
       </div>
     - No Missing value handling approach is implemented because result of the missing value analysis on the data,   
-- __(D) Exploratory Data Analysis__:
+#### __(D) Exploratory Data Analysis__:
   - Dataset Stats
       <table>
       <tr><th>Data Info </th><th><div style="padding-left: 50px;">Stats</div></th></tr>
@@ -288,7 +307,7 @@ The project aimed classifying the species using the features. The study includes
       </div>
     </div>
 
-- __(E) Modelling__: 
+#### __(E) Modelling__: 
   - Data Split
     - Splitting the dataset via  sklearn.model_selection.train_test_split (test_size = 0.2).
   - Util Functions
@@ -374,10 +393,10 @@ The project aimed classifying the species using the features. The study includes
       </div>
 
 
-- __(F) Saving the project__: 
+#### __(F) Saving the project__: 
   - Saving the project and demo studies.
     - trained model loj_ref.sav as pickle format.
-- __(G) Deployment as web demo app__: 
+#### __(G) Deployment as web demo app__: 
   - Creating Gradio Web app to Demostrate the project.Then Serving the demo via huggingface as live.
   - Desciption
     - Project goal is classify the species of iris flowers based on four features.
